@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <script src="./assets/js/base.js"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="app">
+        <script> render('header', '.app'); </script>
+
+        <!-- Profile -->
+        <div class="profile">
+            <div class="grid wide">
+                <div class="container">
+                    <h2 class="title">
+                        <div class="title__icon">
+                            <img src="./assets/img/user-icon.png" alt="title icon" class="title__img">
+                        </div>
+                        <div class="title__text">Tài khoản của bạn</div>
+                    </h2>
+                    <div class="row">
+                        <div class="col l-5 m-12 s-12">
+                            <nav class="sidebar">
+                                <ul class="sidebar__list">
+                                    <li class="sidebar__item sidebar__item--active">
+                                        <a href="./profile.html" class="sidebar__link">
+                                            <div class="sidebar__icon">
+                                                <i class="fa-regular fa-user"></i>
+                                            </div>
+                                            <div class="sidebar__text">
+                                                Thông tin tài khoản
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a href="./order-history.html" class="sidebar__link">
+                                            <div class="sidebar__icon">
+                                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                            </div>
+                                            <div class="sidebar__text">
+                                                Lịch sử mua hàng
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <a href="#1" class="sidebar__link">
+                                            <div class="sidebar__icon">
+                                                <i class="fa-regular fa-lightbulb"></i>
+                                            </div>
+                                            <div class="sidebar__text">
+                                                Tính năng sẽ sớm có
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col l-7 m-12 s-12">
+                            <div class="user-info">
+                                <h2 class="user-info__header">Thông tin tài khoản</h2>
+                                <form action="#" class="user-info__form">
+                                    <div class="user-info__group">
+                                        <div id="" class="user-info__label">Tên khách hàng</div>
+                                        <input type="text" class="user-info__input" value="Nguyễn Đăng Hưng" readonly>
+                                    </div>
+                                    <div class="user-info__group">
+                                        <div class="user-info__label">Ngày sinh</div>
+                                        <input type="text" class="user-info__input" value="30-2-2002" readonly>
+                                    </div>
+                                    <div class="user-info__group">
+                                        <div class="user-info__label">Email</div>
+                                        <input type="text" class="user-info__input" value="google@gmail.com" readonly>
+                                    </div>
+                                    <div class="user-info__group">
+                                        <div class="user-info__label">Số điện thoại</div>
+                                        <input type="text" class="user-info__input" value="0916101202" readonly>
+                                    </div>
+                                    <div class="user-info__group user-info__group--row">
+                                        <label for="male" class="user-info__gender">
+                                            Nam
+                                            <input type="radio" id="male" class="user-info__radio" name="gender"
+                                                value="male" checked disabled>
+                                            <span class="user-info__checkmark"></span>
+                                        </label>
+                                        <label for="female" class="user-info__gender">
+                                            Nữ
+                                            <input type="radio" id="female" class="user-info__radio" name="gender"
+                                                value="female" disabled>
+                                            <span class="user-info__checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <button class="btn btn--orange user-info__button-update">Cập nhật</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toast"></div>
+
+        <script> render('footer', '.app'); </script>
+
+        <script src="./assets/js/profile.js"></script>
+    </div>
+</body>
+
+</html>
