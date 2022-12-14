@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/sale.css">
+    <script src="./assets/js/base.js"></script>
+    <title>SALE</title>
+</head>
+
+<body>
+    <div class="app">
+        <script> render('header', '.app'); </script>
+
+        <div class="sale-container">
+          <div class="slide-container">
+
+            <div class="slide fade">
+              <img src="./assets/img/slider01.jpg" style="width:100%">
+            </div>
+          
+            <div class="slide fade">
+                <img src="./assets/img/slider02.jpg" style="width:100%">
+              </div>
+          
+              <div class="slide fade">
+                <img src="./assets/img/slider03.png" style="width:100%">
+              </div>
+              <div class="slide fade">
+                <img src="./assets/img/slider04.jpg" style="width:100%">
+              </div>
+          
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-caret-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-caret-right"></i></a>
+            
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+          <br>
+          <div class="content">
+            <h2>Khuyến mãi</h2>
+            <div class="select">
+              <input type="text"><span>Áp dụng</span>
+            </div>
+
+            <div class="sales">
+              <div class="sale" id="data1">
+                <img src="./assets/img/sale.png" alt="store">
+                <div>
+                  <h3 class="store_title">Giảm 70k đơn hàng từ 300k</h3>
+                  <p style="font-size: 12px;">HSD: 01/01/2023</p>
+                  <p class="useNow">Sử dụng ngay>></p>
+                </div>
+              </div>
+              
+              <div class="sale" id="data2">
+                <img src="./assets/img/sale.png" alt="store">
+                <div>
+                  <h3 class="store_title">Giảm 70k đơn hàng từ 300k</h3>
+                  <p style="font-size: 12px;">HSD: 01/01/2023</p>
+                  <p class="useNow">Sử dụng ngay>></p>
+                </div>
+              </div>
+
+              <div class="sale" id="data3">
+                <img src="./assets/img/sale.png" alt="store">
+                <div>
+                  <h3 class="store_title">Giảm 70k đơn hàng từ 300k</h3>
+                  <p style="font-size: 12px;">HSD: 01/01/2023</p>
+                  <p class="useNow">Sử dụng ngay>></p>
+                </div>
+              </div>
+
+              <div class="sale" id="data4">
+                <img src="./assets/img/sale.png" alt="store">
+                <div>
+                  <h3 class="store_title">Giảm 70k đơn hàng từ 300k</h3>
+                  <p style="font-size: 12px;">HSD: 01/01/2023</p>
+                  <p class="useNow">Sử dụng ngay>></p>
+                </div>
+              </div>
+
+              <div class="sale" id="data5">
+                <img src="./assets/img/sale.png" alt="store">
+                <div>
+                  <h3 class="store_title">Giảm 70k đơn hàng từ 300k</h3>
+                  <p style="font-size: 12px;">HSD: 01/01/2023</p>
+                  <p class="useNow">Sử dụng ngay>></p>
+                </div>
+              </div>
+
+              <div class="sale" id="data6">
+                <img src="./assets/img/sale.png" alt="store">
+                <div>
+                  <h3 class="store_title">Giảm 70k đơn hàng từ 300k</h3>
+                  <p style="font-size: 12px;">HSD: 01/01/2023</p>
+                  <p class="useNow">Sử dụng ngay>></p>
+                </div>
+              </div>
+              
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="detail">
+                    <h4>Mã giảm giá</h4>
+                    <img class="qr" src="./assets/img/qr.png" alt="QR">
+                    <table>
+                      <tr>
+                        <td class="headerTable">Mô tả:</td>
+                        <td>Ưu đãi giảm 10% cho hoá đơn bất kỳ - Áp dụng dịch vụ Giao hàng (Delivery) khi đặt hàng qua App/Web</td>
+                      </tr>
+                      <tr>
+                        <td>HSD:</td>
+                        <td> Từ 01/10/2022 đến hết ngày 31/10/2022</td>
+                      </tr>
+                      <tr>
+                        <td>Lưu ý:</td>
+                        <td> Áp dụng cho sản phẩm nước - Không áp dụng cho nước đóng chai Fresh, bánh, CPG và topping - Không áp dụng cho các chương trình khuyến mãi song song</td>
+                      </tr>
+                    </table>
+                    <div class="detailUse">Sử dụng ngay</div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="toast"></div>
+
+        <script> render('footer', '.app'); </script>
+
+        <script src="./assets/js/slider.js"></script>
+        <script src="./assets/js/sale.js"></script>
+    </div>
+</body>
+
+</html>

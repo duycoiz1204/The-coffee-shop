@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/store.css">
+    <script src="./assets/js/base.js"></script>
+    <title>Store</title>
+</head>
+
+<body>
+    <div class="app">
+        <script> render('header', '.app'); </script>
+
+        <div class="store-container">
+          <div class="slide-container">
+
+            <div class="slide fade">
+              <img src="./assets/img/slider01.jpg" style="width:100%">
+            </div>
+          
+            <div class="slide fade">
+                <img src="./assets/img/slider02.jpg" style="width:100%">
+              </div>
+          
+              <div class="slide fade">
+                <img src="./assets/img/slider03.png" style="width:100%">
+              </div>
+              <div class="slide fade">
+                <img src="./assets/img/slider04.jpg" style="width:100%">
+              </div>
+          
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-caret-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-caret-right"></i></a>
+            
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+          <br>
+          <div class="content">
+            <h2>Chuỗi cửa hàng COFFEE</h2>
+            <div class="select">
+              <select name="TP" id="TP">
+                <option value="0">Chọn tỉnh/thành phố</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">TP. Hồ Chí Minh</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4">Hải Phòng</option>
+              </select>
+              <select name="QH" id="QH">
+                <option>Chọn quận/huyện</option>
+                <optgroup id="HCM" label="TP.HCM">
+                  <option>Quận 1</option>
+                  <option>Quận 2</option>
+                  <option>Quận 3</option>
+                  <option>Quận 4</option>
+                  <option>Quận 5</option>
+                  <option>Quận 6</option>
+                  <option>Quận 7</option>
+                  <option>Quận 8</option>
+                  <option>Quận 9</option>
+                  <option>Thủ Đức</option>
+                </optgroup>
+                <optgroup id="HN" label="TP.Hà Nội">
+                  <option>Quận Ba Đình</option>
+                  <option>Quận Đống Đa</option>
+                  <option>Quận Cầu Giấy</option>
+                  <option>Quận Hà Đông</option>
+                  <option>Quận Thanh Xuân</option>
+                  <option>Quận Nam Từ Liêm</option>
+                  <option>Quận Tây Hồ</option>
+                  <option>Quận Hoàn Kiếm</option>
+                  <option>Quận Long Biên</option>
+                </optgroup>
+                <optgroup id="DN" label="TP.Đà Nẵng">
+                  <option>Quận Thanh Khê</option>
+                  <option>Quận Sơn Trà</option>
+                  <option>Quận Ngũ Hành Sơn</option>
+                  <option>Quận Liên Chiểu</option>
+                  <option>Quận Hải Châu</option>
+                  <option>Huyện Hoà Vang</option>
+                </optgroup>
+                <optgroup id="HP" label="TP.Hải Phòng">
+                  <option>Quận Hải An</option>
+                  <option>Quận Đồ Sơn</option>
+                  <option>Quận Lê Chân</option>
+                  <option>Huyện Bạch Long Vỹ</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="stores">
+              <div class="store">
+                <img src="./assets/img/store.png" alt="store">
+                <div>
+                  <h3 class="store_title">COFFEE01</h3>
+                  <p>19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
+                </div>
+              </div>
+              
+              <div class="store">
+                <img src="./assets/img/store.png" alt="store">
+                <div>
+                  <h3 class="store_title">COFFEE02</h3>
+                  <p>19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
+                </div>
+              </div>
+
+              <div class="store">
+                <img src="./assets/img/store.png" alt="store">
+                <div>
+                  <h3 class="store_title">COFFEE03</h3>
+                  <p>19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
+                </div>
+              </div>
+
+              <div class="store">
+                <img src="./assets/img/store.png" alt="store">
+                <div>
+                  <h3 class="store_title">COFFEE04</h3>
+                  <p>19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
+                </div>
+              </div>
+
+              <div class="store">
+                <img src="./assets/img/store.png" alt="store">
+                <div>
+                  <h3 class="store_title">COFFEE05</h3>
+                  <p>19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
+                </div>
+              </div>
+
+              <div class="store">
+                <img src="./assets/img/store.png" alt="store">
+                <div>
+                  <h3 class="store_title">COFFEE06</h3>
+                  <p>19 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP.HCM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="toast"></div>
+
+        <script> render('footer', '.app'); </script>
+
+        <script src="./assets/js/slider.js"></script>
+        <script src="./assets/js/store.js"></script>
+    </div>
+</body>
+
+</html>
