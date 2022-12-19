@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header_login.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/profile_login.css">
+    <script src="./assets/js/base.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="app">
+        <script> render('header_login', '.app'); </script>
+
+        <!-- Start: Code in here -->
+
+        <div class="content_login"></div>
+        <div id="toast"></div>
+
+        <script> render('footer', '.app'); </script>
+
+        <script src="./assets/js/profile.js"></script>
+    </div>
+
+    <!-- form login -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+              <img src="./assets/img/background_login.png" alt="" class="img_login">
+            </header>
+            <div class="modal_text">
+                <h1 class="modal_title">Chào mừng bạn đến với DAT Coffee</h1>
+            </div>
+            <div class="modal-body">
+                <div class="block_icon">
+                    <i class="block_icon_star fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="block_icon-number">
+                    <span class="block_icon-text">+84</span>
+                </div>
+                <input type="text" class="modal-input" placeholder="Nhập số điện thoại của bạn">
+               
+            </div>
+            <div class="btn_click">
+                <button class="btn_hover" id="button_btn" onclick="homePage()">Đăng nhập</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- form register -->
+    <div class="modal js__Register-modal">
+        <div class="modal-container js__Register-modal-container">
+            <div class="modal-close js__Register-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+              <img src="./assets/img/background_login.png" alt="" class="img_login">
+            </header>
+            <div class="modal_text">
+                <h1 class="modal_title">Chào mừng bạn đến với DAT Coffee</h1>
+            </div>
+            <div class="modal-body">
+                <div class="block_icon">
+                    <i class="block_icon_star fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="block_icon-number">
+                    <span class="block_icon-text">+84</span>
+                </div>
+                <input type="text" class="modal-input" placeholder="Nhập số điện thoại của bạn">
+               
+            </div>
+            <div class="btn_click">
+                <button class="btn_hover" id="button_btn" onclick="registerInformation()">Đăng kí</button>
+            </div>
+           
+        </div>
+    </div>
+
+    <script>
+        const btnlogin = document.querySelectorAll('.navbar__link-login')
+        const modal = document.querySelector('.js-modal')
+        const closeModal = document.querySelector('.js-modal-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        function showModal() {
+            modal.classList.add('open')
+        }
+
+        function hideModal() {
+            modal.classList.remove('open')  
+        }
+
+        for (i of btnlogin) {
+            i.addEventListener('click', showModal)
+        }
+        closeModal.addEventListener('click', hideModal)
+        modal.addEventListener('click', hideModal)
+        modalContainer.addEventListener('click', function(even) {
+            even.stopPropagation()
+        })
+    </script>
+    <script>
+        const btnregister = document.querySelectorAll('.navbar__link-register')
+        const modalReq = document.querySelector('.js__Register-modal')
+        const closeReq = document.querySelector('.js__Register-modal-close')
+        const ReqContainer = document.querySelector('.js__Register-modal-container')
+
+        function showModal() {
+            modalReq.classList.add('open')
+        }
+
+        function hideModal() {
+            modalReq.classList.remove('open')  
+        }
+         for (i of btnregister) {
+            i.addEventListener('click', showModal)
+        }
+        closeReq.addEventListener('click', hideModal)
+        modalReq.addEventListener('click', hideModal)
+        ReqContainer.addEventListener('click', function(even) {
+            even.stopPropagation()
+        })
+    </script>
+     <!-- Chuyển trang -->
+     <script>
+        function registerInformation(){
+            location.assign("./register-information.html");
+        }
+        function homePage(){
+            location.assign("./index.html");
+        }
+    </script>
+    
+    <!-- End -->
+</body>
+
+</html>
