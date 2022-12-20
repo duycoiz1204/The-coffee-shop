@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/listproduct.css">
+
+    <script src="./assets/js/listproduct.js"></script>
+    <title>ListProduct</title>
+</head>
+
+<body>
+    <div class="app">
+        <script> render('header', '.app'); </script>
+
+        <div class="product-container">
+            <div class="tab-bar">
+                <h3 class="menu">Tất cả</h3>
+                <h5 class="menu">Cà phê</h5>
+                <h5 class="menu">CloudFee</h5>
+                <h5 class="menu">CloudTea</h5>
+                <h5 class="menu">Trà</h5>
+                <h5 class="menu">Hi-Tea Healthy</h5>
+                <h5 class="menu">Bánh & Snack</h5>
+                <h5 class="menu">Thức uống khác</h5>
+            </div>
+            <div class="content">
+                <div class="products">
+                    <h2 class="product-title">Cà phê Việt Nam</h2>
+                    <div class="product" id="sp1">
+                        <img src="./assets/img/suada.jpg" alt="">
+                        <div >
+                            <h3 class="product_name">Cà phê sữa đá</h3>
+                        </div>
+                        <div>
+                            <h3 class="product_price">29.000</h3>
+                        </div>
+                    </div>
+                    <div class="product" id="sp2">
+                        <img src="./assets/img/suanong.jpg" alt="">
+                        <div>
+                            <h3 class="product_name">Cà phê sữa nóng</h3>
+                        </div>
+                        <div>
+                            <h3 class="product_price">35.000</h3>
+                        </div>
+                    </div>
+                    <div class="product" id="sp3">
+                        <img src="./assets/img/machiato.jpg" alt="">
+                        <div>
+                            <h3 class="product_name">Macchiato</h3>
+                        </div>
+                        <div> 
+                            <h3 class="product_price">49.000</h3>
+                        </div>
+                    </div>
+                    <div class="product" id="sp4">
+                        <img src="./assets/img/machiato.jpg" alt="">
+                        <div>
+                            <h3 class="product_name">Macchiato</h3>
+                        </div>
+                        <div> 
+                            <h3 class="product_price">49.000</h3>
+                        </div>
+                    </div>
+                    <div class="product" id="sp5">
+                        <img src="./assets/img/machiato.jpg" alt="">
+                        <div>
+                            <h3 class="product_name">Macchiato</h3>
+                        </div>
+                        <div> 
+                            <h3 class="product_price">49.000</h3>
+                        </div>
+                    </div>
+                    <div class="product" id="sp6">
+                        <img src="./assets/img/machiato.jpg" alt="">
+                        <div>
+                            <h3 class="product_name">Macchiato</h3>
+                        </div>
+                        <div> 
+                            <h3 class="product_price">49.000</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script> render('footer','.app'); </script>
+    </div>
+</body>
+</html>

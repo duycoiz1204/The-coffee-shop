@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+
+    <script src="./assets/js/product.js"></script>
+    <title>Product</title>
+</head>
+<body>
+    <div class="app">
+        <script>render('header','.app')</script>
+
+        <div class="product-container">
+            <div class="tab">
+                <div class="link">
+                    <h3>Menu</h3>
+                    <p> / </p>
+                    <h3>Cà phê</h3>
+                    <p> / </p>
+                    <p>Macchiato</ps>
+                </div>
+                
+            </div>
+
+            <div class="content">
+                <div class="image">
+                    <img src="./assets/img/machiato.jpg" alr="product">
+                </div>
+                <div class="info">
+                    <div class="name">
+                        <h2>Macchiato</h2>
+                    </div>
+                    <div class="price">
+                        <h2>49.000 đ</h2>
+                    </div>
+                    <div class="size">
+                        <h4>Chọn size( bắt buộc )</h4>
+                        <div class="pick-size">
+                            <p>Nhỏ + 0 đ</p>
+                            <p>Vừa + 6.000 đ</p>
+                            <p>Lớn + 10.000 đ </p>
+                        </div>
+                    </div>
+                    <div class="topping">
+                        <div><h4>Topping</h4></div>
+                        <div class="pick-topping">
+                            <div class="topping1">
+                                <p>Kem phô mai Macchiato + 10.000 đ</p>
+                                <p>Shot Expresso + 10.000 đ</p>
+                            </div>
+                            <div class="topping2">
+                                <p>Trân châu trắng + 10.000 đ</p>
+                                <p>Sốt Caramel + 10.000 đ</p>
+                            </div>
+                            <div class="topping3">
+                                <p>Thạch cà phê + 10.000 đ</p>
+                                <!-- <p> aaaaaaaaaaaaaaa</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buyNow">
+                        <h3>Đặt giao tận nơi</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="describe">
+                <h3>Mô tả sản phẩm</h3>
+                <br>
+                <p>
+                    Sự kết hợp hoàn hảo bởi hồng trà dịu nhẹ và sữa tươi, nhấn nhá thêm lớp macchiato trứ danh của DAT Coffee mang đến cho bạn hương vị trà sữa đúng gu tinh tế và healthy.
+                </p>
+            </div>
+
+        </div>
+
+        <script> render('footer','.app'); </script>
+
+    </div>
+</body>
+</html>
