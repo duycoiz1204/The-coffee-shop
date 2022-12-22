@@ -1,0 +1,34 @@
+.success_order{
+    width: 100%;
+    background-color: var(--yellow-color);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.content{
+    color: #f2705e;
+    background-color: #ffffff;
+    padding: 30px 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.content i,.content h5{
+    margin-bottom: 20px;
+}
+.content h3{
+    margin-bottom: 10px;
+}
+.content div{
+    background-color: var(--yellow-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.content div:hover{
+    background-color: #f2705e;
+    color: #ffffff;
+    cursor: pointer;
+}

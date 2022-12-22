@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/product.css">
 
-    <script src="./assets/js/product.js"></script>
     <title>Product</title>
+    <script src="./assets/js/base.js"></script>
 </head>
 <body>
     <div class="app">
@@ -27,7 +27,7 @@
                     <p> / </p>
                     <h3>Cà phê</h3>
                     <p> / </p>
-                    <p>Macchiato</ps>
+                    <p>Macchiato</p>
                 </div>
                 
             </div>
@@ -45,31 +45,24 @@
                     </div>
                     <div class="size">
                         <h4>Chọn size( bắt buộc )</h4>
-                        <div class="pick-size">
-                            <p>Nhỏ + 0 đ</p>
-                            <p>Vừa + 6.000 đ</p>
-                            <p>Lớn + 10.000 đ </p>
+                        <div class="pick-size" id="sizeContainer">
+                            <p onclick="clickSize(this,0)">Nhỏ + 0 đ </p>
+                            <p onclick="clickSize(this,1)">Vừa + 6.000 đ</p>
+                            <p onclick="clickSize(this,2)">Lớn + 10.000 đ </p>
                         </div>
                     </div>
                     <div class="topping">
                         <div><h4>Topping</h4></div>
                         <div class="pick-topping">
-                            <div class="topping1">
-                                <p>Kem phô mai Macchiato + 10.000 đ</p>
-                                <p>Shot Expresso + 10.000 đ</p>
-                            </div>
-                            <div class="topping2">
-                                <p>Trân châu trắng + 10.000 đ</p>
-                                <p>Sốt Caramel + 10.000 đ</p>
-                            </div>
-                            <div class="topping3">
-                                <p>Thạch cà phê + 10.000 đ</p>
-                                <!-- <p> aaaaaaaaaaaaaaa</p> -->
-                            </div>
+                                <p onclick="clickTopping(this,0)">Kem phô mai Macchiato + 10.000 đ</p>
+                                <p onclick="clickTopping(this,1)">Shot Expresso + 10.000 đ</p>
+                                <p onclick="clickTopping(this,2)">Trân châu trắng + 10.000 đ</p>
+                                <p onclick="clickTopping(this,3)">Sốt Caramel + 10.000 đ</p>
+                                <p onclick="clickTopping(this,4)">Thạch cà phê + 10.000 đ</p>
                         </div>
                     </div>
-                    <div class="buyNow">
-                        <h3>Đặt giao tận nơi</h3>
+                    <div class="buyNow" onclick="toast({title:'Thành công',message:'Thêm vào giỏ hàng thành công!'})">
+                        <h3>Thêm vào giỏ hàng</h3>
                     </div>
                 </div>
             </div>
@@ -82,9 +75,9 @@
             </div>
 
         </div>
-
+        <div id="toast"></div>
         <script> render('footer','.app'); </script>
-
+        <script src="./assets/js/product.js"></script>
     </div>
 </body>
 </html>

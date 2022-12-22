@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/listproduct.css">
-
-    <script src="./assets/js/listproduct.js"></script>
-    <title>ListProduct</title>
+    <title>List Product</title>
+    <script src="./assets/js/base.js"></script>
 </head>
 
 <body>
@@ -23,29 +22,53 @@
         <script> render('header', '.app'); </script>
 
         <div class="product-container">
-            <div class="tab-bar">
-                <h3 class="menu">Tất cả</h3>
-                <h5 class="menu">Cà phê</h5>
-                <h5 class="menu">CloudFee</h5>
-                <h5 class="menu">CloudTea</h5>
-                <h5 class="menu">Trà</h5>
-                <h5 class="menu">Hi-Tea Healthy</h5>
-                <h5 class="menu">Bánh & Snack</h5>
-                <h5 class="menu">Thức uống khác</h5>
-            </div>
+            <table class="tab-bar">
+                <tr onclick="showIcon(this)">
+                    <td style="width: 30px;"><i id="icon" class="fa-solid fa-mug-hot fa-lg"></i></td>
+                    <td>Tất cả</td>
+                </tr>
+                <tr onclick="showIcon(this)">
+                    <td ></td>
+                    <td>Cà phê</td>
+                </tr>
+                <tr onclick="showIcon(this)">
+                    <td ></td>
+                    <td>CloudFee</td>
+                </tr>
+                <tr onclick="showIcon(this)">
+                    <td ></td>
+                    <td>CloudTea</td>
+                </tr>
+                <tr onclick="showIcon(this)">
+                    <td ></td>
+                    <td>Trà</td>
+                </tr>
+                <tr onclick="showIcon(this)">
+                    <td ></td>
+                    <td>Hi-Tea Healthy</td>
+                </tr>
+                <tr onclick="showIcon(this)">
+                    <td ></td>
+                    <td>Bánh & Snack</td>
+                </tr>
+                <tr onclick="showIcon(this)">
+                    <td ></td>
+                    <td>Thức uống khác</td>
+                </tr>
+            </table>
             <div class="content">
                 <div class="products">
                     <h2 class="product-title">Cà phê Việt Nam</h2>
-                    <div class="product" id="sp1">
+                    <div class="product" id="sp1" onclick="window.location.href = '/product.html'">
                         <img src="./assets/img/suada.jpg" alt="">
-                        <div >
+                        <div>
                             <h3 class="product_name">Cà phê sữa đá</h3>
                         </div>
                         <div>
                             <h3 class="product_price">29.000</h3>
                         </div>
                     </div>
-                    <div class="product" id="sp2">
+                    <div class="product" id="sp2" onclick="window.location.href = '/product.html'">
                         <img src="./assets/img/suanong.jpg" alt="">
                         <div>
                             <h3 class="product_name">Cà phê sữa nóng</h3>
@@ -54,7 +77,7 @@
                             <h3 class="product_price">35.000</h3>
                         </div>
                     </div>
-                    <div class="product" id="sp3">
+                    <div class="product" id="sp3" onclick="window.location.href = '/product.html'">
                         <img src="./assets/img/machiato.jpg" alt="">
                         <div>
                             <h3 class="product_name">Macchiato</h3>
@@ -63,7 +86,7 @@
                             <h3 class="product_price">49.000</h3>
                         </div>
                     </div>
-                    <div class="product" id="sp4">
+                    <div class="product" id="sp4" onclick="window.location.href = '/product.html'">
                         <img src="./assets/img/machiato.jpg" alt="">
                         <div>
                             <h3 class="product_name">Macchiato</h3>
@@ -72,7 +95,7 @@
                             <h3 class="product_price">49.000</h3>
                         </div>
                     </div>
-                    <div class="product" id="sp5">
+                    <div class="product" id="sp5" onclick="window.location.href = '/product.html'">
                         <img src="./assets/img/machiato.jpg" alt="">
                         <div>
                             <h3 class="product_name">Macchiato</h3>
@@ -81,7 +104,7 @@
                             <h3 class="product_price">49.000</h3>
                         </div>
                     </div>
-                    <div class="product" id="sp6">
+                    <div class="product" id="sp6" onclick="window.location.href = '/product.html'">
                         <img src="./assets/img/machiato.jpg" alt="">
                         <div>
                             <h3 class="product_name">Macchiato</h3>
@@ -93,8 +116,11 @@
                 </div>
             </div>
         </div>
+        <div id="toast"></div>
 
-        <script> render('footer','.app'); </script>
+        <script> render('footer', '.app'); </script>
+        <script src="./assets/js/listproduct.js"></script>
     </div>
+    
 </body>
 </html>

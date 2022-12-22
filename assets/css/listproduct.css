@@ -16,39 +16,48 @@
     height: 400px;
     margin: 10px 10px 10px 10px;
     background-color: white;
-    border: 1px solid #888;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+    transition: all .2 ease;
+    color: rgb(98, 98, 98); 
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.menu{
-    padding-left: 20px;
+.tab-bar i{
+    padding-bottom: 15px;
 }
-.tab-bar h5{
-    padding-top: 15px;
-}
-.menu:hover{
-    transform: scale(1.05);
+.tab-bar tr:hover{
     color: #EF9D54;
 }
+
+
 .products{ 
     display: flex;
-    padding: 0 50px;
+    padding: 0 0 0 50px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
+    
 }
 .product{
     border-radius: 3px;
-    width: 300px;
+    width: 23%;
+    min-width: 250px;
     height: 400px;
     margin-top: 10px;
     transition: all 0.2 ease;
     cursor: pointer;
     display: block;
+    margin-right: 15px;
 }
+.product:hover img{
+    transform: scale(1.05);
+}
+
 .product-title{
     width: 100%;
     margin: 10px 10px 10px 10px;
 }
 .product img{
-    border: 1px solid black;
     border-radius:5px;
     margin: 10px 10px 10px 0px;
     width: 100%;
@@ -63,29 +72,21 @@
 .product img:hover{
     transform: scale(1.05);
 }
-/* .product>div{
-    width: 100%;
-    margin: 10px 10px 10px 10px;
-    background-color: white;
-    border: 1px solid #888;
+.product>div{
+    font-size: 15px;
+    line-height: 36px;
+}
+.product_name,.product_price{
+    background-color: #ffffff;
+    padding-left: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width:100%;
+    border: 1px solid rgb(95, 95, 95);
+    height: 36px;
+    border-radius: 3px;
+    color: rgb(104, 104, 104);
+}
 
-} */
-.product_name{
-    background-color: #ffffff;
-    padding-left: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width:100%;
-    border: 1px solid black;
-    height: 30px;
-}
-.product_price{
-    background-color: #ffffff;
-    padding-left: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width:100%;
-    border: 1px solid black;
-    height: 30px;
-}
 .hoverChild{
     background-color:#EF9D54 ;
 }

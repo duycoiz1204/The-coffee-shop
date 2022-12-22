@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/successOrder.css">
+    <script src="./assets/js/base.js"></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="app">
+        <script> render('header', '.app'); </script>
+
+        <!-- Start: Code in here -->
+        <div class="success_order">
+            <div class="content">
+                <i class="fa-regular fa-circle-check fa-6x"></i>
+                <h3>Thành công, đơn hàng sẽ được gửi đến bạn ngay bây giờ!</h3>
+                <h5>Cảm ơn bạn đã sử dụng dịch vụ của DAT COFFEE, chúc bạn ngon miệng</h5>
+                <div onclick="window.location.href='/index.html'">Về trang chủ</div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <div id="toast"></div>
+
+        <script> render('footer', '.app'); </script>
+
+        <script src="./assets/js/profile.js"></script>
+    </div>
+</body>
+
+</html>

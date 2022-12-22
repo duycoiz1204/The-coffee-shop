@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <script src="./assets/js/base.js"></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="app">
+        <script> render('header', '.app'); </script>
+
+        <!-- Start: Code in here -->
+        <div class="cart-container">
+            <h3 class="title">Giỏ hàng</h3>
+            <div class="content">
+                <div class="info">
+                    <div class="user_infor">
+                        <p id="address">Địa chỉ: 307/40 Tôn Đản</p>
+                        <p id="time"></p>
+                        <p>Họ tên: Phan Văn Khánh<br>SDT: 037*****69</p>
+                    </div>
+                    <div class="payment">Phương thức thanh toán</div>
+                </div>
+                <div class="product_detail">
+                    <div class="product_infor">
+                        <div>Sản phẩm:
+                            <ul>
+                                <li>Bạc xỉu<i class="fa-sharp fa-solid fa-xmark"></i></li>
+                                <li>Macchiato<i class="fa-sharp fa-solid fa-xmark"></i></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span>Ưu đãi: Free ship</span><br>
+                            <span>Tổng tiền: <p class="total">78.000 VND</p></span>
+                        </div>
+                    </div>
+                    <div class="btn_order" onclick="window.location.href='successOrder.html'">Đặt hàng</div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="modalAddess" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2>Chọn địa chỉ</h2>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Vui lòng nhập địa chỉ">
+                    <i><i class="fa-solid fa-map"></i> Chọn từ bản đồ</i>
+                    
+                <div class="btn_save">Lưu</div>
+                </div>
+              </div>
+            
+          
+          </div>
+        <!-- End -->
+
+        <div id="toast"></div>
+
+        <script> render('footer', '.app'); </script>
+
+        <script src="./assets/js/cart.js"></script>
+    </div>
+</body>
+
+</html>
